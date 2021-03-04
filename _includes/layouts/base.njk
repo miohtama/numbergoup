@@ -1,23 +1,132 @@
 <!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<html lang="en">
+  {% include "components/head.njk" %}
+  <body>
 
-	{% include "components/head.njk" %}
+    <header>
+		{% include "components/nav.njk" %}
+    </header>
 
-	<body>
+    <main role="main">
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
-		</header>
+      <div class="container marketing">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Number go up</h1>
+            <p class="lead">Research and podcast on new blockchains</p>
+          </div>
+        </div>
+      </div>
 
-		<main>
-			{{ layoutContent | safe }}
-		</main>
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
 
-		{% include "components/footer.njk" %}
+      <div class="container marketing">
 
-	</body>
+        <div class="row justify-content-md-center">
+          <div class="col-md-12">
+            <h2 class="text-center">
+              With your amazing hosts
+            </h2>
+          </div>
+        </div>
 
+        <!-- Three columns of text below the carousel -->
+        <div class="row justify-content-md-center">
+
+          <div class="col-lg-4 text-center">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Mikko Ohtamaa</h2>
+            <p>Techical researcher</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 text-center">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Nima Asghari</h2>
+            <p>Community manager</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 text-center">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Lawrence Chiu</h2>
+            <p>Marketing manager</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">Episodes</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+
+              <li class="media">
+                <img src="..." class="mr-3" alt="...">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Teaser</h5>
+                  Sexy announcement and introduction to get us registered on podcast sites. 30 seconds.
+                </div>
+              </li>
+
+              <li class="media">
+                <img src="..." class="mr-3" alt="...">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Introduction</h5>
+                  Description and goals of this podcast. 20 minutes.
+                </div>
+              </li>
+              <li class="media my-4">
+                <img src="..." class="mr-3" alt="...">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Optimism</h5>
+                  Optimism layer 2 scaling solution for Ethereum. 20 minutes.
+                </div>
+              </li>
+              <li class="media">
+                <img src="..." class="mr-3" alt="...">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <!--
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+        -->
+
+      </div><!-- /.container -->
+
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  </body>
 </html>
+
