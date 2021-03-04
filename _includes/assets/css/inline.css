@@ -1,3 +1,11 @@
+a {
+	color: #1D861C;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 .jumbotron {
 	background: white;
 }
@@ -7,8 +15,9 @@
 }
 
 .media img {
-	max-width: 128px;
-	max-height: 64px;
+	width: 128px;
+	height: 64px;
+	object-fit: contain;
 }
 
 .media-body {
@@ -17,4 +26,17 @@
 
 .media .badge {
 	display: inline-block;
+	background: #1D861C !important;
+}
+
+.faces a:hover {
+	text-decoration: none;
+}
+
+.faces i {
+	font-size: 200%;
+}
+
+.tuned i {
+	font-size: 48px;
 }
