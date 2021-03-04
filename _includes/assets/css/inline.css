@@ -24,6 +24,10 @@ a:hover {
 	min-height: 128px;
 }
 
+.nav .badge {
+	background: #1D861C !important;
+}
+
 .media .badge {
 	display: inline-block;
 	background: #1D861C !important;
@@ -35,6 +39,10 @@ a:hover {
 
 .faces i {
 	font-size: 200%;
+}
+
+.faces img {
+	filter: grayscale(100%);
 }
 
 .tuned i {
