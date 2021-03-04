@@ -1,0 +1,20 @@
+.jumbotron {
+	background: white;
+}
+
+.jumbotron-logo {
+	max-height: 400px;
+}
+
+.media img {
+	max-width: 128px;
+	max-height: 64px;
+}
+
+.media-body {
+	min-height: 128px;
+}
+
+.media .badge {
+	display: inline-block;
+}
